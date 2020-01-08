@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemToList">
+
+    <Button
+            android:id="@+id/addItemButton"
+            android:layout_width="95dp"
+            android:layout_height="56dp"
+            android:text="Add Item"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="329dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="329dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/enterOCR"/>
+    <EditText
+            android:layout_width="348dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/insertItem" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="88dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="188dp"
+            android:hint="Item Name" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="195dp"
+            android:layout_marginBottom="32dp" app:layout_constraintBottom_toTopOf="@+id/addItemButton"
+    />
+    <Button
+            android:text="Add by OCR"
+            android:layout_width="125dp"
+            android:layout_height="66dp"
+            android:id="@+id/enterOCR" android:layout_marginTop="112dp"
+            app:layout_constraintTop_toBottomOf="@+id/insertItem" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="312dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="316dp"
+            app:layout_constraintHorizontal_bias="0.409" android:layout_marginBottom="118dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.571"/>
+
+</android.support.constraint.ConstraintLayout>
